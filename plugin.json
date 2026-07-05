@@ -1,0 +1,12 @@
+{
+    "ID": "8441be51-09d7-47d4-b6a2-b386b714a0d1",
+    "ActionKeyword": "md",
+    "Name": "Markdown Preview Test",
+    "Description": "Markdown preview test plugin",
+    "Author": "DavidGBrett",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/DavidGBrett/Flow.Launcher.Plugin.MarkdownPreviewTest",
+    "IcoPath": "Images\\app.png",
+    "ExecuteFileName": "main.py"
+}
