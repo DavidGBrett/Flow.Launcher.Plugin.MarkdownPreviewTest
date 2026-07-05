@@ -19,3 +19,7 @@ Use these to check that each visibility mode behaves as expected.
 1. Open Flow Launcher
 2. Search for `pm install Markdown Preview Test`
 3. Press enter to install
+
+## License
+
+MIT
