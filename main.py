@@ -59,7 +59,13 @@ def _preview_content():
 
 **bold** *italic* `code`
 
-### Code Block
+### Links
+
+- <https://github.com/Flow-Launcher/Flow.Launcher>
+- [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher)
+- [named link with title](https://github.com/Flow-Launcher/Flow.Launcher "Flow Launcher")
+
+### Code Blocks
 
 ```python
 # long line for horizontal scroll testing
@@ -74,9 +80,43 @@ def search(query): results = find(query); return [r for r in results if r.matche
 
 
 
-
 # vertical space test
 ```
+
+```xml
+<note>
+  <to>User</to>
+  <from>Plugin</from>
+  <body>XML rendering test</body>
+</note>
+```
+
+```json
+{
+  "name": "test",
+  "nested": {
+    "array": [1, 2, 3],
+    "enabled": true
+  }
+}
+```
+
+```diff
+- old line
++ new line
+ unchanged
+```
+
+```text
+plain text block with no highlighting
+```
+
+### HTML
+
+<p style="color: red;">Red paragraph text</p>
+<p><b>Bold HTML</b> and <i>italic HTML</i> and <u>underlined</u></p>
+<details><summary>Click to expand</summary>Hidden content</details>
+<table border="1"><tr><td>Cell 1</td><td>Cell 2</td></tr></table>
 
 ### Long line outside code block
 
@@ -108,7 +148,9 @@ This is a deliberately long line of text outside any code block to test whether 
 |-------|-------------------------------|
 | x     | This cell has a very long line of text that should wrap or scroll depending on how the table rendering is handled in the markdown preview pane |
 
+### Images
 
+![Flow Launcher](https://raw.githubusercontent.com/Flow-Launcher/Flow.Launcher/master/Flow.Launcher/Images/app.png)
 """
 
 
