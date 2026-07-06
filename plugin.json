@@ -4,7 +4,7 @@
     "Name": "Markdown Preview Test",
     "Description": "Markdown preview test plugin",
     "Author": "DavidGBrett",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Language": "python",
     "Website": "https://github.com/DavidGBrett/Flow.Launcher.Plugin.MarkdownPreviewTest",
     "IcoPath": "Images\\app.png",
