@@ -12,6 +12,7 @@ from flowlauncher import FlowLauncher
 class MarkdownPreviewTest(FlowLauncher):
 
     def query(self, query):
+        preview = _preview_content(query)
         return [
             {
                 "Title": "Always",
@@ -19,7 +20,7 @@ class MarkdownPreviewTest(FlowLauncher):
                 "IcoPath": "Images/app.png",
                 "Preview": {
                     "ContentType": "markdown",
-                    "Description": _preview_content()
+                    "Description": preview
                 },
                 "PreviewVisibility": "always"
             },
@@ -29,7 +30,7 @@ class MarkdownPreviewTest(FlowLauncher):
                 "IcoPath": "Images/app.png",
                 "Preview": {
                     "ContentType": "markdown",
-                    "Description": _preview_content()
+                    "Description": preview
                 },
                 "PreviewVisibility": "default"
             },
@@ -39,7 +40,7 @@ class MarkdownPreviewTest(FlowLauncher):
                 "IcoPath": "Images/app.png",
                 "Preview": {
                     "ContentType": "markdown",
-                    "Description": _preview_content()
+                    "Description": preview
                 },
                 "PreviewVisibility": "never"
             },
@@ -54,8 +55,17 @@ class MarkdownPreviewTest(FlowLauncher):
         return []
 
 
-def _preview_content():
-    return """## Test Preview
+def _preview_content(query=""):
+    raw = query.strip()
+    if raw:
+        preview = raw + "\n\n---\n\n" + _default_content()
+    else:
+        preview = _default_content()
+    return preview
+
+
+def _default_content():
+    return """## Markdown Examples
 
 **bold** *italic* `code`
 
