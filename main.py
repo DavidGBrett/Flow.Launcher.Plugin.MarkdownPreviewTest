@@ -25,14 +25,14 @@ class MarkdownPreviewTest(FlowLauncher):
                 "PreviewVisibility": "always"
             },
             {
-                "Title": "Default",
-                "SubTitle": "PreviewVisibility: default",
+                "Title": "Optional",
+                "SubTitle": "PreviewVisibility: optional",
                 "IcoPath": "Images/app.png",
                 "Preview": {
                     "ContentType": "markdown",
                     "Description": preview
                 },
-                "PreviewVisibility": "default"
+                "PreviewVisibility": "optional"
             },
             {
                 "Title": "Never",
