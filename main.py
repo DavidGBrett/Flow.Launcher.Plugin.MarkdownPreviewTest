@@ -15,72 +15,72 @@ class MarkdownPreviewTest(FlowLauncher):
         preview = _preview_content(query)
         return [
             {
-                "Title": "Always",
-                "SubTitle": "PreviewVisibility: always",
-                "IcoPath": "Images/app.png",
-                "Preview": {
-                    "ContentBlocks": [
+                "title": "Always",
+                "subTitle": "previewVisibility: always",
+                "icoPath": "Images/app.png",
+                "preview": {
+                    "contentBlocks": [
                         {
-                            "Type": "markdown",
-                            "Markdown": preview
+                            "type": "markdown",
+                            "markdown": preview
                         }
                     ]
                 },
-                "PreviewVisibility": "always"
+                "previewVisibility": "always"
             },
             {
-                "Title": "Optional",
-                "SubTitle": "PreviewVisibility: optional",
-                "IcoPath": "Images/app.png",
-                "Preview": {
-                    "ContentBlocks": [
+                "title": "Optional",
+                "subTitle": "previewVisibility: optional",
+                "icoPath": "Images/app.png",
+                "preview": {
+                    "contentBlocks": [
                         {
-                            "Type": "markdown",
-                            "Markdown": preview
+                            "type": "markdown",
+                            "markdown": preview
                         }
                     ]
                 },
-                "PreviewVisibility": "optional"
+                "previewVisibility": "optional"
             },
             {
-                "Title": "Never",
-                "SubTitle": "PreviewVisibility: never",
-                "IcoPath": "Images/app.png",
-                "Preview": {
-                    "ContentBlocks": [
+                "title": "Never",
+                "subTitle": "previewVisibility: never",
+                "icoPath": "Images/app.png",
+                "preview": {
+                    "contentBlocks": [
                         {
-                            "Type": "markdown",
-                            "Markdown": preview
+                            "type": "markdown",
+                            "markdown": preview
                         }
                     ]
                 },
-                "PreviewVisibility": "never"
+                "previewVisibility": "never"
             },
             {
-                "Title": "Multiple Blocks",
-                "SubTitle": "Preview with multiple markdown blocks",
-                "IcoPath": "Images/app.png",
-                "Preview": {
-                    "ContentBlocks": [
+                "title": "Multiple Blocks",
+                "subTitle": "Preview with multiple markdown blocks",
+                "icoPath": "Images/app.png",
+                "preview": {
+                    "contentBlocks": [
                         {
-                            "Type": "markdown",
-                            "Markdown": "## First block\n\nThis is the first short block."
+                            "type": "markdown",
+                            "markdown": "## First block\n\nThis is the first short block."
                         },
                         {
-                            "Type": "markdown",
-                            "Markdown": "### Second block\n\nThis is the second short block."
+                            "type": "markdown",
+                            "markdown": "### Second block\n\nThis is the second short block."
                         },
                         {
-                            "Type": "markdown",
-                            "Markdown": "**Third block** with inline formatting."
+                            "type": "markdown",
+                            "markdown": "**Third block** with inline formatting."
                         }
                     ]
                 }
             },
             {
-                "Title": "None",
-                "SubTitle": "Preview and PreviewVisibility are unset",
-                "IcoPath": "Images/app.png",
+                "title": "None",
+                "subTitle": "preview and previewVisibility are unset",
+                "icoPath": "Images/app.png",
             }
         ]
 
