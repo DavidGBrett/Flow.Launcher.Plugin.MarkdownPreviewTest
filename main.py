@@ -63,8 +63,8 @@ class MarkdownPreviewTest(FlowLauncher):
                 "richPreview": {
                     "contentBlocks": [
                         {
-                            "type": "markdown",
-                            "inlineMarkdown": "**First block**\n\nA short markdown example."
+                            "type": "text",
+                            "text": "**First block**\n\nA short plain text example."
                         },
                         {
                             "type": "separator"
@@ -77,8 +77,8 @@ class MarkdownPreviewTest(FlowLauncher):
                             "type": "separator"
                         },
                         {
-                            "type": "markdown",
-                            "inlineMarkdown": "**Last block**\n\nAnother short markdown example."
+                            "type": "text",
+                            "text": "**Last block**\n\nAnother plain text example."
                         }
                     ]
                 }
