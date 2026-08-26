@@ -18,7 +18,7 @@ class MarkdownPreviewTest(FlowLauncher):
                 "title": "Always",
                 "subTitle": "previewVisibility: always",
                 "icoPath": "Images/app.png",
-                "preview": {
+                "richPreview": {
                     "contentBlocks": [
                         {
                             "type": "markdown",
@@ -32,7 +32,7 @@ class MarkdownPreviewTest(FlowLauncher):
                 "title": "Optional",
                 "subTitle": "previewVisibility: optional",
                 "icoPath": "Images/app.png",
-                "preview": {
+                "richPreview": {
                     "contentBlocks": [
                         {
                             "type": "markdown",
@@ -46,7 +46,7 @@ class MarkdownPreviewTest(FlowLauncher):
                 "title": "Never",
                 "subTitle": "previewVisibility: never",
                 "icoPath": "Images/app.png",
-                "preview": {
+                "richPreview": {
                     "contentBlocks": [
                         {
                             "type": "markdown",
@@ -58,9 +58,9 @@ class MarkdownPreviewTest(FlowLauncher):
             },
             {
                 "title": "Multiple Blocks",
-                "subTitle": "Preview with multiple markdown blocks",
+                "subTitle": "Rich preview with multiple markdown blocks",
                 "icoPath": "Images/app.png",
-                "preview": {
+                "richPreview": {
                     "contentBlocks": [
                         {
                             "type": "markdown",
@@ -79,7 +79,7 @@ class MarkdownPreviewTest(FlowLauncher):
             },
             {
                 "title": "None",
-                "subTitle": "preview and previewVisibility are unset",
+                "subTitle": "richPreview with previewVisibility are unset",
                 "icoPath": "Images/app.png",
             }
         ]
