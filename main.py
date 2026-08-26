@@ -64,15 +64,15 @@ class MarkdownPreviewTest(FlowLauncher):
                     "contentBlocks": [
                         {
                             "type": "markdown",
-                            "inlineMarkdown": "## First block\n\nThis is the first short block."
+                            "inlineMarkdown": "**First block**\n\nA short markdown example."
                         },
                         {
                             "type": "markdown",
-                            "inlineMarkdown": "### Second block\n\nThis is the second short block."
+                            "inlineMarkdown": preview
                         },
                         {
                             "type": "markdown",
-                            "inlineMarkdown": "**Third block** with inline formatting."
+                            "inlineMarkdown": "**Last block**\n\nAnother short markdown example."
                         }
                     ]
                 }
