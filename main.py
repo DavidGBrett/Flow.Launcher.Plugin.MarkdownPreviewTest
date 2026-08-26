@@ -22,7 +22,7 @@ class MarkdownPreviewTest(FlowLauncher):
                     "contentBlocks": [
                         {
                             "type": "markdown",
-                            "markdown": preview
+                            "inlineMarkdown": preview
                         }
                     ]
                 },
@@ -36,7 +36,7 @@ class MarkdownPreviewTest(FlowLauncher):
                     "contentBlocks": [
                         {
                             "type": "markdown",
-                            "markdown": preview
+                            "inlineMarkdown": preview
                         }
                     ]
                 },
@@ -50,7 +50,7 @@ class MarkdownPreviewTest(FlowLauncher):
                     "contentBlocks": [
                         {
                             "type": "markdown",
-                            "markdown": preview
+                            "inlineMarkdown": preview
                         }
                     ]
                 },
@@ -64,15 +64,15 @@ class MarkdownPreviewTest(FlowLauncher):
                     "contentBlocks": [
                         {
                             "type": "markdown",
-                            "markdown": "## First block\n\nThis is the first short block."
+                            "inlineMarkdown": "## First block\n\nThis is the first short block."
                         },
                         {
                             "type": "markdown",
-                            "markdown": "### Second block\n\nThis is the second short block."
+                            "inlineMarkdown": "### Second block\n\nThis is the second short block."
                         },
                         {
                             "type": "markdown",
-                            "markdown": "**Third block** with inline formatting."
+                            "inlineMarkdown": "**Third block** with inline formatting."
                         }
                     ]
                 }
