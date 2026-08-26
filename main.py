@@ -58,7 +58,7 @@ class MarkdownPreviewTest(FlowLauncher):
             },
             {
                 "title": "Multiple Blocks",
-                "subTitle": "Rich preview with multiple markdown blocks",
+                "subTitle": "multiple markdown blocks",
                 "icoPath": "Images/app.png",
                 "richPreview": {
                     "contentBlocks": [
@@ -85,7 +85,7 @@ class MarkdownPreviewTest(FlowLauncher):
             },
             {
                 "title": "None",
-                "subTitle": "richPreview with previewVisibility are unset",
+                "subTitle": "previewVisibility is unset",
                 "icoPath": "Images/app.png",
             }
         ]
