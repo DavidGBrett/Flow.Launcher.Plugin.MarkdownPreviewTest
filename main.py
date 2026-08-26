@@ -19,8 +19,12 @@ class MarkdownPreviewTest(FlowLauncher):
                 "SubTitle": "PreviewVisibility: always",
                 "IcoPath": "Images/app.png",
                 "Preview": {
-                    "ContentType": "markdown",
-                    "Description": preview
+                    "ContentBlocks": [
+                        {
+                            "Type": "markdown",
+                            "Markdown": preview
+                        }
+                    ]
                 },
                 "PreviewVisibility": "always"
             },
@@ -29,8 +33,12 @@ class MarkdownPreviewTest(FlowLauncher):
                 "SubTitle": "PreviewVisibility: optional",
                 "IcoPath": "Images/app.png",
                 "Preview": {
-                    "ContentType": "markdown",
-                    "Description": preview
+                    "ContentBlocks": [
+                        {
+                            "Type": "markdown",
+                            "Markdown": preview
+                        }
+                    ]
                 },
                 "PreviewVisibility": "optional"
             },
@@ -39,8 +47,12 @@ class MarkdownPreviewTest(FlowLauncher):
                 "SubTitle": "PreviewVisibility: never",
                 "IcoPath": "Images/app.png",
                 "Preview": {
-                    "ContentType": "markdown",
-                    "Description": preview
+                    "ContentBlocks": [
+                        {
+                            "Type": "markdown",
+                            "Markdown": preview
+                        }
+                    ]
                 },
                 "PreviewVisibility": "never"
             },
