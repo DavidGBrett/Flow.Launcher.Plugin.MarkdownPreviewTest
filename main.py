@@ -67,8 +67,14 @@ class MarkdownPreviewTest(FlowLauncher):
                             "inlineMarkdown": "**First block**\n\nA short markdown example."
                         },
                         {
+                            "type": "separator"
+                        },
+                        {
                             "type": "markdown",
                             "inlineMarkdown": preview
+                        },
+                        {
+                            "type": "separator"
                         },
                         {
                             "type": "markdown",
