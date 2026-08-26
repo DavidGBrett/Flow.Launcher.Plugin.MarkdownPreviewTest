@@ -9,6 +9,7 @@ Type `md` to show four results:
 - **Always** - PreviewVisibility: always
 - **Default** - PreviewVisibility: default
 - **Never** - PreviewVisibility: never
+- **Multiple Blocks** - A preview containing multiple short markdown blocks
 - **None** - A result without a preview object
 
 Use these to check that each visibility mode behaves as expected.

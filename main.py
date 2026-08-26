@@ -57,6 +57,27 @@ class MarkdownPreviewTest(FlowLauncher):
                 "PreviewVisibility": "never"
             },
             {
+                "Title": "Multiple Blocks",
+                "SubTitle": "Preview with multiple markdown blocks",
+                "IcoPath": "Images/app.png",
+                "Preview": {
+                    "ContentBlocks": [
+                        {
+                            "Type": "markdown",
+                            "Markdown": "## First block\n\nThis is the first short block."
+                        },
+                        {
+                            "Type": "markdown",
+                            "Markdown": "### Second block\n\nThis is the second short block."
+                        },
+                        {
+                            "Type": "markdown",
+                            "Markdown": "**Third block** with inline formatting."
+                        }
+                    ]
+                }
+            },
+            {
                 "Title": "None",
                 "SubTitle": "Preview and PreviewVisibility are unset",
                 "IcoPath": "Images/app.png",
