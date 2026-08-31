@@ -84,6 +84,19 @@ class MarkdownPreviewTest(FlowLauncher):
                 }
             },
             {
+                "title": "File Path",
+                "subTitle": "markdown preview loaded from example.md",
+                "icoPath": "Images/app.png",
+                "richPreview": {
+                    "contentBlocks": [
+                        {
+                            "type": "markdown",
+                            "filePath": os.path.join(parent_folder_path, "example.md")
+                        }
+                    ]
+                }
+            },
+            {
                 "title": "None",
                 "subTitle": "previewVisibility is unset",
                 "icoPath": "Images/app.png",

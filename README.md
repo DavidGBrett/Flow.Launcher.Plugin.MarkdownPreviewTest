@@ -4,12 +4,13 @@ A test plugin for the [markdown preview pane feature](https://github.com/Flow-La
 
 ## Results
 
-Type `md` to show four results:
+Type `md` to show six results:
 
 - **Always** - PreviewVisibility: always
 - **Default** - PreviewVisibility: default
 - **Never** - PreviewVisibility: never
 - **Multiple Blocks** - A preview containing multiple short markdown blocks
+- **File Path** - A preview loaded from the repo-local `example.md` file
 - **None** - A result without a preview object
 
 Use these to check that each visibility mode behaves as expected.
