@@ -15,39 +15,91 @@ class MarkdownPreviewTest(FlowLauncher):
         preview = _preview_content(query)
         return [
             {
-                "Title": "Always",
-                "SubTitle": "PreviewVisibility: always",
-                "IcoPath": "Images/app.png",
-                "Preview": {
-                    "ContentType": "markdown",
-                    "Description": preview
+                "title": "Always",
+                "subTitle": "previewVisibility: always",
+                "icoPath": "Images/app.png",
+                "richPreview": {
+                    "contentBlocks": [
+                        {
+                            "type": "markdown",
+                            "inlineMarkdown": preview
+                        }
+                    ]
                 },
-                "PreviewVisibility": "always"
+                "previewVisibility": "always"
             },
             {
-                "Title": "Optional",
-                "SubTitle": "PreviewVisibility: optional",
-                "IcoPath": "Images/app.png",
-                "Preview": {
-                    "ContentType": "markdown",
-                    "Description": preview
+                "title": "Optional",
+                "subTitle": "previewVisibility: optional",
+                "icoPath": "Images/app.png",
+                "richPreview": {
+                    "contentBlocks": [
+                        {
+                            "type": "markdown",
+                            "inlineMarkdown": preview
+                        }
+                    ]
                 },
-                "PreviewVisibility": "optional"
+                "previewVisibility": "optional"
             },
             {
-                "Title": "Never",
-                "SubTitle": "PreviewVisibility: never",
-                "IcoPath": "Images/app.png",
-                "Preview": {
-                    "ContentType": "markdown",
-                    "Description": preview
+                "title": "Never",
+                "subTitle": "previewVisibility: never",
+                "icoPath": "Images/app.png",
+                "richPreview": {
+                    "contentBlocks": [
+                        {
+                            "type": "markdown",
+                            "inlineMarkdown": preview
+                        }
+                    ]
                 },
-                "PreviewVisibility": "never"
+                "previewVisibility": "never"
             },
             {
-                "Title": "None",
-                "SubTitle": "Preview and PreviewVisibility are unset",
-                "IcoPath": "Images/app.png",
+                "title": "Multiple Blocks",
+                "subTitle": "multiple content blocks",
+                "icoPath": "Images/app.png",
+                "richPreview": {
+                    "contentBlocks": [
+                        {
+                            "type": "text",
+                            "text": "**First block**\n\nA short plain text example."
+                        },
+                        {
+                            "type": "separator"
+                        },
+                        {
+                            "type": "markdown",
+                            "inlineMarkdown": preview
+                        },
+                        {
+                            "type": "separator"
+                        },
+                        {
+                            "type": "text",
+                            "text": "**Last block**\n\nAnother plain text example."
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "File Path",
+                "subTitle": "markdown preview loaded from example.md",
+                "icoPath": "Images/app.png",
+                "richPreview": {
+                    "contentBlocks": [
+                        {
+                            "type": "markdown",
+                            "filePath": os.path.join(parent_folder_path, "example.md")
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "None",
+                "subTitle": "previewVisibility is unset",
+                "icoPath": "Images/app.png",
             }
         ]
 
