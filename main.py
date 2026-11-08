@@ -18,7 +18,8 @@ class MarkdownPreviewTest(FlowLauncher):
                 "title": "Always",
                 "subTitle": "previewVisibility: always",
                 "icoPath": "Images/app.png",
-                "richPreview": {
+                "previewDefinition": {
+                    "type": "blocks",
                     "contentBlocks": [
                         {
                             "type": "markdown",
@@ -32,7 +33,8 @@ class MarkdownPreviewTest(FlowLauncher):
                 "title": "Optional",
                 "subTitle": "previewVisibility: optional",
                 "icoPath": "Images/app.png",
-                "richPreview": {
+                "previewDefinition": {
+                    "type": "blocks",
                     "contentBlocks": [
                         {
                             "type": "markdown",
@@ -46,7 +48,8 @@ class MarkdownPreviewTest(FlowLauncher):
                 "title": "Never",
                 "subTitle": "previewVisibility: never",
                 "icoPath": "Images/app.png",
-                "richPreview": {
+                "previewDefinition": {
+                    "type": "blocks",
                     "contentBlocks": [
                         {
                             "type": "markdown",
@@ -60,7 +63,8 @@ class MarkdownPreviewTest(FlowLauncher):
                 "title": "Multiple Blocks",
                 "subTitle": "multiple content blocks",
                 "icoPath": "Images/app.png",
-                "richPreview": {
+                "previewDefinition": {
+                    "type": "blocks",
                     "contentBlocks": [
                         {
                             "type": "text",
@@ -87,7 +91,8 @@ class MarkdownPreviewTest(FlowLauncher):
                 "title": "File Path",
                 "subTitle": "markdown preview loaded from example.md",
                 "icoPath": "Images/app.png",
-                "richPreview": {
+                "previewDefinition": {
+                    "type": "blocks",
                     "contentBlocks": [
                         {
                             "type": "markdown",
