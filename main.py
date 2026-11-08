@@ -82,7 +82,8 @@ class MarkdownPreviewTest(FlowLauncher):
                         },
                         {
                             "type": "text",
-                            "text": "**Last block**\n\nAnother plain text example."
+                            "emphasis": "muted",
+                            "text": "**Last block**\n\nAnother plain text example, but muted."
                         }
                     ]
                 }
